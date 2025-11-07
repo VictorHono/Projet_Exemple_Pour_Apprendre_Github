@@ -1,0 +1,87 @@
+MSI@Honore MINGW64 /f/Cours/Git (master)
+$ git init : Toute premiere commande qu'on tape pour initialiser git sur un projet
+
+
+MSI@Honore MINGW64 /f/Cours/Git (master)
+$ git switch -c main : Commande permettant de créer la branche main et directement switcher sur celle ci
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git add . : commande permettant de selectionner tout les fichiers du projet et toutes les modifications effectuer sur celle ci
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git commit -m "Creation du projet test git et creation du fichier index" : commande permettant d'enregister les fichiers selectionner dans la branche sur la quelle on se trouve
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git branch 
+* main : commande permettant d'afficher toutes les branches dans notre repository, ici il ya uniquement la brache main
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git branch feature/background : commande permettant de creer une nouvelle branche , ici on a creer la branche feature/background
+
+
+MSI@Honore MINGW64 /f/Cours/Git (feature/background)
+$ git switch feature/background : commande permettant de quitter d'une branche a une autre
+
+
+MSI@Honore MINGW64 /f/Cours/Git (feature/background)
+$ git add . : deja expliquer
+
+
+MSI@Honore MINGW64 /f/Cours/Git (feature/background)
+$ git commit -m "Creation du fichier style et coloration du background" : deja expliquer
+
+
+MSI@Honore MINGW64 /f/Cours/Git (feature/background)
+$ git switch main : déjà expliquer
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git merge feature/background : permet de fusionner la branche actuelle ( la branche dans la quelle on se trouve ) avec une autre branche. dans ce cas avec la branche feature/background
+
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git branch master : déjà expliquer
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git branch 
+  feature/background
+* main
+  master :
+déjà expliquer
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git remote add origin https://github.com/VictorHono/Projet_Exemple_Pour_Apprendre_Github.git : permet de lier ton projet actuelle ( ton depot local ) a ton depot distant créer sur le site GitHub. ici, on a lier a Projet_Exemple_Pour_Apprendre_Github.git un projet que jai créer sur le site git
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git branch -M main : sert à renommer la branche actuelle en "main".
+
+MSI@Honore MINGW64 /f/Cours/Git (main)
+$ git push -u origin main : Cette commande envoie (pousse) ta branche locale main vers le dépôt distant appelé origin (ton dépôt GitHub). Et elle établit un lien de suivi entre ta branche locale et la branche distante.
+
+invitation dun camarade sur le site GitHub et par la nsuite on a clonner le projet du collaborateur avec la commmande : 
+
+la suite des action ci dessous sont realiser sur le projet du collaborateur :
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$ git add . : deja expliquer
+
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$  git commit -m "Modification du fichier index et du fichier style" : deja expliquer 
+
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$ git push origin master : Donc cette commande envoie ta branche locale master vers la branche master du dépôt distant origin.
+
+
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$ git add . 
+
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$  git commit -m "Modification du fichier style"
+
+
+MSI@Honore MINGW64 /f/Cours/projet_Git_debut (master)
+$ git push origin master
+
